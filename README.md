@@ -6,7 +6,7 @@
 
 **Ranks electricians, plumbers, carpenters and other informal workers for a plain-English service request by combining *what they can do* with *how much they can be trusted*.**
 
-[**🔗 Live demo**](LIVE_URL) · [Research paper](#research) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
+[**🔗 Live demo**](LIVE_URL) · [📄 Research paper (Scopus · Taylor & Francis)](#research) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
@@ -14,6 +14,7 @@
 ![Flask](https://img.shields.io/badge/Flask-REST%20API-000000?logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![SQLite](https://img.shields.io/badge/SQLite-13%20tables-003B57?logo=sqlite&logoColor=white)
+![Publication](https://img.shields.io/badge/Paper-Scopus%20%C2%B7%20Taylor%20%26%20Francis-0A5EB0)
 ![Tests](https://img.shields.io/badge/tests-40%20passing-2EA44F)
 
 </div>
@@ -91,13 +92,18 @@ React frontend  ──REST/JSON + JWT──►  Flask backend  ──►  SQLite
 
 ## Research
 
-**"TrueRank: Trust-Aware NLP Framework for Matching Informal Workers to Industry Demand"**, by Syed Moin Ahmed.
+📄 **"TrueRank: Trust-Aware NLP Framework for Matching Informal Workers to Industry Demand"**
+
+- **First author:** Syed Moin Ahmed
+- **Publication:** forthcoming in a **Scopus-indexed Taylor & Francis (CRC Press)** publication
+
+The web application implements the paper's method exactly: the same preprocessing pipeline, the same TF-IDF + cosine similarity matching, and the paper's trust and ranking formulas, with the paper treated as the source of truth.
 
 ---
 
 ## Author
 
-**Syed Moin Ahmed**: AI & Machine Learning
+**Syed Moin Ahmed**: AI & Machine Learning · First author of the TrueRank research paper (Scopus-indexed, Taylor & Francis)
 [GitHub](https://github.com/syed-moin-ahmed)
 
 ## Source code
