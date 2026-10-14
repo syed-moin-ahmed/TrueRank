@@ -6,7 +6,7 @@
 
 **Ranks electricians, plumbers, carpenters and other informal workers for a plain-English service request by combining *what they can do* with *how much they can be trusted*.**
 
-[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
+[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research-publication) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
@@ -52,14 +52,27 @@ TrueRank reads a natural-language request such as *"need someone to fix damaged 
 
 ## Results
 
-From the offline evaluation in the research paper:
+Evaluated on a dataset of **1,500 informal-worker profiles** from Bengaluru, Mumbai, Delhi, Hyderabad and Chennai (from the research paper):
 
-| Metric | TrueRank |
+| Model | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|
+| Naïve Bayes | 78.4 % | 77.9 % | 76.8 % | 77.3 % |
+| Logistic Regression | 82.1 % | 81.6 % | 80.9 % | 81.2 % |
+| SVM | 85.7 % | 85.2 % | 84.6 % | 84.8 % |
+| Random Forest | 87.9 % | 87.4 % | 87.1 % | 87.2 % |
+| **TrueRank** | **90.6 %** | **90.2 %** | **89.8 %** | **90.0 %** |
+
+TrueRank beats the strongest baseline (Random Forest) by **2.7 points** of accuracy.
+
+**Ablation study: every component earns its place**
+
+| Variant | Accuracy |
 |---|---|
-| Accuracy | **90.6 %** |
-| Precision | **90.2 %** |
-| Recall | **89.8 %** |
-| F1-score | **90.0 %** |
+| Full TrueRank | **90.6 %** |
+| Without Sentiment Feature | 86.0 % |
+| Without Trust Score | 87.3 % |
+| Without TF-IDF Layer | 84.1 % |
+| Baseline (TF-IDF only) | 78.4 % |
 
 ## Features
 
@@ -90,20 +103,36 @@ React frontend  ──REST/JSON + JWT──►  Flask backend  ──►  SQLite
                                            └──►  ml/  preprocessing · TF-IDF · trust · ranking
 ```
 
-## Research
+## Research publication
 
-📄 **"TrueRank: Trust-Aware NLP Framework for Matching Informal Workers to Industry Demand"**
+📄 **True Rank: Trust-Aware NLP Framework for Matching Informal Workers to Industry Demand**
 
-- **First author:** Syed Moin Ahmed
-- **Publication:** forthcoming in a **Scopus-indexed Taylor & Francis (CRC Press)** publication
+**S. M. Ahmed** *(first & corresponding author)*, N. Ghorpade, S. Farookh, N. F. Baig, S. U. Kulsum
 
-The web application implements the paper's method exactly: the same preprocessing pipeline, the same TF-IDF + cosine similarity matching, and the paper's trust and ranking formulas, with the paper treated as the source of truth.
+- Presented at **ICSIIT**; forthcoming in **Scopus-indexed Taylor & Francis (CRC Press)** conference proceedings
+
+> **Abstract.** India has over 2 crore informal blue-collar workers who have largely gone unnoticed by today's digital hiring platforms as they lack formal resumes and provable work histories. True Rank is a machine learning framework based on natural language processing (NLP) which ranks informal workers and matches them to service requests using unstructured profile text only. The system uses TF-IDF vectorization to convert worker profiles and user queries into a common feature space. The semantic similarity score is then merged with a Composite Trust Score based on historical ratings, job-completion rate, peer endorsements and dispute history. On a proprietary dataset of 1,500 informal worker profiles, True Rank achieves 90.6% classification accuracy, outperforming Naïve Bayes, Logistic Regression, SVM and Random Forest baselines, confirming that jointly modelling skill relevance and behavioural trust outperforms either signal alone.
+
+**Keywords:** Skill Matching · Gig Economy · Digital Employment Ecosystem · Trust Score Analytics · Informal Labor Sector · Workforce Intelligence
+
+<details>
+<summary><b>Cite this work</b></summary>
+
+```text
+S. M. Ahmed, N. Ghorpade, S. Farookh, N. F. Baig, and S. U. Kulsum,
+"True Rank: Trust-Aware NLP Framework for Matching Informal Workers to Industry Demand,"
+in Proc. ICSIIT, Taylor & Francis (CRC Press), forthcoming.
+```
+</details>
+
+The web application implements the paper's method directly: the same preprocessing pipeline, TF-IDF + cosine similarity matching, and the paper's trust and ranking formulas. The full paper is available on request.
 
 ---
 
 ## Author
 
-**Syed Moin Ahmed**: AI & Machine Learning · First author of the TrueRank research paper (Scopus-indexed, Taylor & Francis)
+**Syed Moin Ahmed**: AI & Machine Learning · First author of the TrueRank research paper (Scopus-indexed, Taylor & Francis)  
+📧 syedmoin1907@gmail.com
 [GitHub](https://github.com/syed-moin-ahmed)
 
 ## Source code
