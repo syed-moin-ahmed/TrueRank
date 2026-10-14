@@ -6,7 +6,7 @@
 
 **Ranks electricians, plumbers, carpenters and other informal workers for a plain-English service request by combining *what they can do* with *how much they can be trusted*.**
 
-[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research-publication) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
+[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research-publication) · [How it works](#how-it-works) · [💻 Source code](https://github.com/syed-moin-ahmed/TrueRank-source) · [Tech stack](#tech-stack)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
@@ -137,7 +137,7 @@ The web application implements the paper's method directly: the same preprocessi
 
 ## Source code
 
-The source code is kept private. If you are a recruiter or hiring manager and would like a code walkthrough or access to the repository, please get in touch through my GitHub profile.
+💻 **Full source code:** [github.com/syed-moin-ahmed/TrueRank-source](https://github.com/syed-moin-ahmed/TrueRank-source), published for viewing and evaluation (all rights reserved).
 
 ---
 
