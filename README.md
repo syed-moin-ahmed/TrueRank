@@ -6,7 +6,7 @@
 
 **Ranks electricians, plumbers, carpenters and other informal workers for a plain-English service request by combining *what they can do* with *how much they can be trusted*.**
 
-[**🔗 Live demo**](LIVE_URL) · [📄 Research paper (Scopus · Taylor & Francis)](#research) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
+[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research) · [How it works](#how-it-works) · [Tech stack](#tech-stack)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
