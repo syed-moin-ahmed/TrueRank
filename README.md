@@ -6,7 +6,7 @@
 
 **Ranks electricians, plumbers, carpenters and other informal workers for a plain-English service request by combining *what they can do* with *how much they can be trusted*.**
 
-[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research-publication) · [How it works](#how-it-works) · [💻 Source code (on request)](#source-code) · [Tech stack](#tech-stack)
+[**🔗 Live demo**](https://truerank-teal.vercel.app) · [📄 Research paper (Scopus · Taylor & Francis)](#research-publication) · [How it works](#how-it-works) · [💻 Source code](https://github.com/syed-moin-ahmed/TrueRank-source) · [Tech stack](#tech-stack)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
@@ -137,8 +137,7 @@ The web application implements the paper's method directly: the same preprocessi
 
 ## Source code
 
-🔒 The full source code (Python ML core, Flask API, React frontend and 40 automated tests) is kept in a private repository.
-**Recruiters and hiring managers:** email [syedmoin1907@gmail.com](mailto:syedmoin1907@gmail.com) with your GitHub username and I'll give you access, or I can walk you through the code live.
+💻 **Full source code:** [github.com/syed-moin-ahmed/TrueRank-source](https://github.com/syed-moin-ahmed/TrueRank-source): Python ML core, Flask API, React frontend and 40 automated tests. Published for viewing and evaluation; all rights reserved.
 
 ---
 
